@@ -1,6 +1,7 @@
 import fresh_tomatoes
 from media import Movie
 
+# Create our movies
 toy_story = Movie('Toy Story',
                   'A story of a boy and his toys that come to life',
                   'http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg',
@@ -18,7 +19,9 @@ shawshank_redepmtion = Movie('Shawshank Redemption',
                'https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg',
                'https://www.youtube.com/watch?v=6hB3S9bIaco')
 
+# Store our movies in a list
 movies = [toy_story, avatar, war_of_the_worlds, shawshank_redepmtion]
 
+# Use the fresh_tomatoes module to open our movies page
 fresh_tomatoes.open_movies_page(movies)
 
